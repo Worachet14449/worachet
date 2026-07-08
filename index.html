@@ -1,55 +1,60 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio | วรเชฏฐ์ ชาทอน</title>
-
-<style>
-
-*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
 }
 
 body{
-    background:#f4f4f4;
+    background:linear-gradient(135deg,#ffffff,#f6f8fb,#eef2f7);
+    color:#444;
 }
 
 /* เมนู */
 nav{
-    background:#333;
-    padding:18px;
+    position:sticky;
+    top:0;
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(12px);
+    padding:20px;
     text-align:center;
-    box-shadow:0 3px 10px rgba(0,0,0,.2);
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+    z-index:100;
 }
 
 nav a{
-    color:white;
+    color:#555;
     text-decoration:none;
-    margin:0 20px;
-    font-size:18px;
-    font-weight:bold;
+    margin:0 18px;
+    font-size:17px;
+    font-weight:600;
     transition:.3s;
+    padding:8px 14px;
+    border-radius:30px;
 }
 
 nav a:hover{
-    color:#d9d9d9;
+    background:#f0f3f7;
+    color:#111;
 }
 
-/* กล่องข้อมูล */
+/* กล่องหลัก */
 .container{
-    width:80%;
+    width:90%;
     max-width:900px;
-    margin:50px auto;
-    background:white;
-    padding:40px;
-    border-radius:20px;
+    margin:70px auto;
+    padding:50px;
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(18px);
+
+    border-radius:30px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+    border:1px solid rgba(255,255,255,.7);
 }
 
 /* รูป */
@@ -58,97 +63,89 @@ img{
     height:220px;
     border-radius:50%;
     object-fit:cover;
-    border:8px solid #ddd;
-    margin-bottom:20px;
+    border:8px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.05);
 }
 
 /* ตัวอักษร */
 h1{
-    color:#333;
-    margin-bottom:10px;
-    font-size:42px;
+    margin-top:20px;
+    font-size:45px;
+    color:#222;
+    letter-spacing:1px;
 }
 
 h2{
-    color:#666;
-    margin-bottom:20px;
+    color:#888;
+    margin:15px 0 25px;
+    font-weight:400;
 }
 
 p{
-    color:#555;
     font-size:20px;
-    margin:8px;
+    color:#666;
+    line-height:1.8;
 }
 
 /* ปุ่ม */
 .btn{
     display:inline-block;
-    margin-top:25px;
-    padding:12px 30px;
-    background:#555;
-    color:white;
+    margin-top:35px;
+    padding:15px 38px;
+
+    background:white;
+    color:#444;
+
+    border-radius:40px;
     text-decoration:none;
-    border-radius:30px;
-    transition:.3s;
+    font-weight:bold;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.35s;
 }
 
 .btn:hover{
-    background:#222;
-    transform:scale(1.05);
+    background:#f4f4f4;
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
 }
 
 /* Footer */
 footer{
-    margin-top:40px;
-    background:#333;
-    color:white;
+    margin-top:60px;
+    background:#fafafa;
+    color:#777;
     text-align:center;
-    padding:15px;
+    padding:20px;
+    border-top:1px solid #eee;
 }
 
-</style>
+/* มือถือ */
+@media(max-width:768px){
 
-</head>
+.container{
+    padding:35px 20px;
+}
 
-<body>
+h1{
+    font-size:34px;
+}
 
-<nav>
+img{
+    width:180px;
+    height:180px;
+}
 
-<a href="index.html">หน้าแรก</a>
+nav a{
+    display:inline-block;
+    margin:8px;
+    font-size:15px;
+}
 
-<a href="profile.html">ประวัติส่วนตัว</a>
-
-<a href="education.html">ประวัติการศึกษา</a>
-
-<a href="award.html">ผลงาน</a>
-
-<a href="contact.html">ติดต่อ</a>
-
-</nav>
-
-<div class="container">
-
-<img src="images/WIN_20260610_10_14_35_Pro.jpg" alt="รูปภาพ">
-
-<h1>วรเชฏฐ์ ชาทอน</h1>
-
-<h2>Portfolio Website</h2>
-
-<p>นักเรียนชั้น ม.6/1</p>
-
-<p>โรงเรียนพานทอง</p>
-
-<p>ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของผม</p>
-
-<a href="profile.html" class="btn">เข้าสู่เว็บไซต์</a>
-
-</div>
-
-<footer>
-
-© 2026 Portfolio | Worachet Chaton
-
-</footer>
-
-</body>
-</html>
+}
