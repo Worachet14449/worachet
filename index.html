@@ -1,33 +1,145 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="th">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio วรเชฏฐ์</title>
+<title>Portfolio | วรเชฏฐ์ ชาทอน</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e8f5e9,#f1f8e9,#ffffff);
+}
+
+/* เมนู */
+nav{
+    background:#2e7d32;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+/* กล่องหลัก */
+.container{
+    width:90%;
+    max-width:700px;
+    margin:50px auto;
+    background:white;
+    padding:45px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+/* รูปภาพ */
+img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #81c784;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#1b5e20;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#43a047;
+    margin-bottom:25px;
+}
+
+p{
+    font-size:20px;
+    color:#555;
+    margin:10px 0;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 35px;
+    background:#43a047;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2e7d32;
+    transform:translateY(-3px);
+}
+
+footer{
+    margin-top:40px;
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+</style>
 
 </head>
 
 <body>
 
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="profile.html">ประวัติส่วนตัว</a>
+    <a href="education.html">ประวัติการศึกษา</a>
+    <a href="award.html">ผลงาน</a>
+    <a href="contact.html">ช่องทางการติดต่อ</a>
+</nav>
 
+<div class="container">
+
+<img src="images/profile.jpg" alt="รูปภาพ">
 
 <h1>นาย วรเชฏฐ์ ชาทอน</h1>
 
+<h2>Portfolio Website</h2>
 
+<p>🎓 นักเรียนชั้น ม.6/1</p>
 
-<p>นักเรียนชั้นม.6/1</p>
+<p>🏫 โรงเรียนพานทอง</p>
 
+<p>💚 ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของผม</p>
 
+<a href="profile.html" class="btn">เข้าสู่เว็บไซต์</a>
 
-<p>โรงเรียนพานทอง</p>
+</div>
 
-
+<footer>
+    © 2026 Portfolio | Worachet Chaton
+</footer>
 
 </body>
-
 </html>
-<a href="profile.html">ประวัติส่วนตัว</a>
-<a href="profile.html">ประวัติการศึกษา</a>
-<a href="profile.html">ผลงาน</a>
-<a href="profile.html">ช่องทางการติดต่อ</a>
