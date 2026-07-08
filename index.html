@@ -1,151 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Portfolio | วรเชฏฐ์ ชาทอน</title>
+
+<style>
+
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    font-family:"Segoe UI",sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#ffffff,#f6f8fb,#eef2f7);
-    color:#444;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffffff,#f4f6f8,#e9edf2);
 }
 
-/* เมนู */
-nav{
-    position:sticky;
-    top:0;
-    background:rgba(255,255,255,.9);
-    backdrop-filter:blur(12px);
-    padding:20px;
-    text-align:center;
-    box-shadow:0 4px 20px rgba(0,0,0,.08);
-    z-index:100;
-}
-
-nav a{
-    color:#555;
-    text-decoration:none;
-    margin:0 18px;
-    font-size:17px;
-    font-weight:600;
-    transition:.3s;
-    padding:8px 14px;
-    border-radius:30px;
-}
-
-nav a:hover{
-    background:#f0f3f7;
-    color:#111;
-}
-
-/* กล่องหลัก */
 .container{
     width:90%;
-    max-width:900px;
-    margin:70px auto;
-    padding:50px;
+    max-width:600px;
+    background:white;
     text-align:center;
-
-    background:rgba(255,255,255,.85);
-    backdrop-filter:blur(18px);
-
-    border-radius:30px;
-
-    box-shadow:
-    0 15px 40px rgba(0,0,0,.08);
-
-    border:1px solid rgba(255,255,255,.7);
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
 
-/* รูป */
 img{
-    width:220px;
-    height:220px;
+    width:180px;
+    height:180px;
     border-radius:50%;
     object-fit:cover;
-    border:8px solid white;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-    transition:.4s;
+    border:6px solid #f1f1f1;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    margin-bottom:25px;
+    transition:.3s;
 }
 
 img:hover{
     transform:scale(1.05);
 }
 
-/* ตัวอักษร */
 h1{
-    margin-top:20px;
-    font-size:45px;
-    color:#222;
-    letter-spacing:1px;
+    color:#333;
+    font-size:40px;
+    margin-bottom:10px;
 }
 
 h2{
-    color:#888;
-    margin:15px 0 25px;
+    color:#777;
     font-weight:400;
+    margin-bottom:25px;
 }
 
 p{
-    font-size:20px;
     color:#666;
-    line-height:1.8;
+    font-size:20px;
+    margin:10px 0;
 }
 
-/* ปุ่ม */
 .btn{
     display:inline-block;
-    margin-top:35px;
-    padding:15px 38px;
-
-    background:white;
-    color:#444;
-
-    border-radius:40px;
+    margin-top:30px;
+    padding:14px 35px;
+    background:#6b7280;
+    color:white;
     text-decoration:none;
-    font-weight:bold;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-
-    transition:.35s;
+    border-radius:40px;
+    font-size:18px;
+    transition:.3s;
 }
 
 .btn:hover{
-    background:#f4f4f4;
-    transform:translateY(-4px);
-    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    background:#4b5563;
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Footer */
-footer{
-    margin-top:60px;
-    background:#fafafa;
-    color:#777;
-    text-align:center;
-    padding:20px;
-    border-top:1px solid #eee;
-}
+</style>
 
-/* มือถือ */
-@media(max-width:768px){
+</head>
 
-.container{
-    padding:35px 20px;
-}
+<body>
 
-h1{
-    font-size:34px;
-}
+<div class="container">
 
-img{
-    width:180px;
-    height:180px;
-}
+<img src="images/profile.jpg" alt="รูปภาพ">
 
-nav a{
-    display:inline-block;
-    margin:8px;
-    font-size:15px;
-}
+<h1>วรเชฏฐ์ ชาทอน</h1>
 
-}
+<h2>Portfolio Website</h2>
+
+<p>🎓 นักเรียนชั้น ม.6/1</p>
+
+<p>🏫 โรงเรียนพานทอง</p>
+
+<p>✨ ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของผม</p>
+
+<a href="#" class="btn">เข้าสู่เว็บไซต์</a>
+
+</div>
+
+</body>
+</html>
