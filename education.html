@@ -203,3 +203,43 @@ footer{
 
 </body>
 </html>
+/* ===== เอฟเฟกต์ใบไม้ร่วง ===== */
+.leaf{
+    position:fixed;
+    top:-50px;
+    font-size:30px;
+    animation:fall linear infinite;
+    opacity:0.8;
+    z-index:999;
+    pointer-events:none;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-50px) translateX(0) rotate(0deg);
+    }
+
+    25%{
+        transform:translateY(25vh) translateX(40px) rotate(90deg);
+    }
+
+    50%{
+        transform:translateY(50vh) translateX(-40px) rotate(180deg);
+    }
+
+    75%{
+        transform:translateY(75vh) translateX(30px) rotate(270deg);
+    }
+
+    100%{
+        transform:translateY(110vh) translateX(-30px) rotate(360deg);
+    }
+}
+<div class="leaf" style="left:5%;animation-duration:8s;">🍃</div>
+<div class="leaf" style="left:15%;animation-duration:12s;font-size:22px;">🍂</div>
+<div class="leaf" style="left:28%;animation-duration:9s;font-size:28px;">🌿</div>
+<div class="leaf" style="left:40%;animation-duration:10s;">🍃</div>
+<div class="leaf" style="left:55%;animation-duration:13s;font-size:24px;">🍂</div>
+<div class="leaf" style="left:70%;animation-duration:11s;">🌿</div>
+<div class="leaf" style="left:82%;animation-duration:9s;font-size:26px;">🍃</div>
+<div class="leaf" style="left:95%;animation-duration:14s;">🍂</div>
