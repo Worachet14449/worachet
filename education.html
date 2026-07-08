@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ประวัติการศึกษา | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e8f5e9,#f5fff7,#ffffff);
+}
+
+/* เมนู */
+nav{
+    background:#2e7d32;
+    padding:18px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+/* หัวข้อ */
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    color:#1b5e20;
+    font-size:45px;
+}
+
+header p{
+    color:#555;
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* Timeline */
+.timeline{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    position:relative;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:5px;
+    height:100%;
+    background:#81c784;
+}
+
+.box{
+    width:42%;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    margin:30px 0;
+    position:relative;
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 35px rgba(46,125,50,.25);
+}
+
+.left{
+    left:0;
+}
+
+.right{
+    left:58%;
+}
+
+.box::after{
+    content:"";
+    position:absolute;
+    top:30px;
+    width:20px;
+    height:20px;
+    background:#43a047;
+    border-radius:50%;
+}
+
+.left::after{
+    right:-50px;
+}
+
+.right::after{
+    left:-50px;
+}
+
+.box h2{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.box p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* Footer */
+footer{
+    margin-top:50px;
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.timeline::before{
+    left:20px;
+}
+
+.box{
+    width:calc(100% - 60px);
+    left:50px !important;
+}
+
+.box::after{
+    left:-40px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">หน้าแรก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">ประวัติการศึกษา</a>
+<a href="award.html">ผลงาน</a>
+<a href="contact.html">ช่องทางการติดต่อ</a>
+</nav>
+
+<header>
+<h1>ประวัติการศึกษา</h1>
+<p>เส้นทางการศึกษาของผม</p>
+</header>
+
+<div class="timeline">
+
+<div class="box left">
+<h2>ระดับประถมศึกษา</h2>
+<p><strong>โรงเรียน :</strong> โรงเรียนชุมชนวัดหนองตำลึง</p>
+
+</div>
+
+<div class="box right">
+<h2>ระดับมัธยมศึกษาตอนต้น</h2>
+<p><strong>โรงเรียน :</strong> โรงเรียนพานทอง</p>
+
+</div>
+
+<div class="box left">
+<h2>ระดับมัธยมศึกษาตอนปลาย</h2>
+<p><strong>โรงเรียน :</strong> โรงเรียนพานทอง</p>
+<p>กำลังศึกษาชั้น มัธยมศึกษาปีที่ 6/1</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Portfolio | Worachet Chaton
+</footer>
+
+</body>
+</html>
