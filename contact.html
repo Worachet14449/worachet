@@ -1,64 +1,216 @@
-<div class="timeline">
+<!DOCTYPE html>
+<html lang="th">
 
+<head>
 
-<div class="card left">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>📱 เบอร์โทรศัพท์</h2>
+<title>ติดต่อ | วรเชฏฐ์ ชาทอน</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e8f5e9,#f1f8e9,#ffffff);
+    overflow-x:hidden;
+}
+
+/* เมนู */
+
+nav{
+    background:#2e7d32;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:17px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    color:#1b5e20;
+    font-size:45px;
+    animation:show 1s;
+}
+
+header p{
+    color:#555;
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* Contact Card */
+
+.contact{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    animation:show 1s;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(46,125,50,.25);
+}
+
+.card h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.card p{
+    font-size:19px;
+    color:#555;
+    line-height:2;
+}
+
+/* Animation */
+
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ใบไม้ */
+
+.leaf{
+    position:fixed;
+    top:-50px;
+    font-size:30px;
+    animation:fall linear infinite;
+    opacity:.8;
+    z-index:999;
+    pointer-events:none;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-50px) translateX(0) rotate(0deg);
+    }
+    50%{
+        transform:translateY(50vh) translateX(80px) rotate(180deg);
+    }
+    100%{
+        transform:translateY(110vh) translateX(-80px) rotate(360deg);
+    }
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .card{
+        padding:25px;
+    }
+
+    header h1{
+        font-size:35px;
+    }
+
+    .card p{
+        font-size:17px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">หน้าแรก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">ประวัติการศึกษา</a>
+<a href="award.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+</nav>
+
+<header>
+<h1>ติดต่อ</h1>
+<p>สามารถติดต่อหรือสอบถามข้อมูลเพิ่มเติมได้</p>
+</header>
+
+<div class="contact">
+
+<div class="card">
+
+<h2>📞 ข้อมูลการติดต่อ</h2>
 
 <p>
-โทร : 08X-XXX-XXXX
+👤 ชื่อ : วรเชฏฐ์ ชาทอน<br><br>
+
+📱 โทรศัพท์ : 08X-XXX-XXXX<br><br>
+
+📧 อีเมล : example@gmail.com<br><br>
+
+🏠 ที่อยู่ : อำเภอพานทอง จังหวัดชลบุรี<br><br>
+
+🌐 Facebook : Worachet Chaton
 </p>
 
 </div>
 
-
-
-<div class="card right">
-
-<h2>📧 อีเมล</h2>
-
-<p>
-Email : example@gmail.com
-</p>
-
 </div>
 
+<!-- ใบไม้ -->
+<div class="leaf" style="left:5%;animation-duration:8s;">🍃</div>
+<div class="leaf" style="left:15%;animation-duration:11s;">🍂</div>
+<div class="leaf" style="left:30%;animation-duration:9s;">🌿</div>
+<div class="leaf" style="left:45%;animation-duration:13s;">🍃</div>
+<div class="leaf" style="left:60%;animation-duration:10s;">🍂</div>
+<div class="leaf" style="left:75%;animation-duration:12s;">🌿</div>
+<div class="leaf" style="left:90%;animation-duration:14s;">🍃</div>
 
+<footer>
+© 2026 Portfolio | Worachet Chaton
+</footer>
 
-<div class="card left">
-
-<h2>💬 Facebook</h2>
-
-<p>
-Facebook : วรเชฏฐ์ ชาทอน
-</p>
-
-</div>
-
-
-
-<div class="card right">
-
-<h2>📷 Instagram</h2>
-
-<p>
-Instagram : @your_instagram
-</p>
-
-</div>
-
-
-
-<div class="card left">
-
-<h2>📍 ที่อยู่</h2>
-
-<p>
-จังหวัดชลบุรี<br>
-ประเทศไทย
-</p>
-
-</div>
-
-
-</div>
+</body>
+</html>
